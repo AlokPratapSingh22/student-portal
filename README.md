@@ -1,6 +1,9 @@
 # [Student Educational Portal](https://portal-students.herokuapp.com/)
 
-### By - Alok Pratap Singh     Sahil Choudhary      Chiliveru Aravind
+### By -
+### Alok Pratap Singh   
+### Sahil Choudhary     
+### Chiliveru Aravind
 
 ![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white) ![Brave](https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=Brave&logoColor=white) ![Edge](https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white) ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)  
 
