@@ -27,3 +27,15 @@ https://portal-students.herokuapp.com/
 - #### Unit Conversions
   ![image](https://user-images.githubusercontent.com/60225218/174468546-4435472b-961c-4d7c-815d-032419f4518e.png)
 
+## To build
+- create a folder in your pc
+- create your virtual environoment
+- activate virtual environment
+- pip install django-admin
+- create a folder named student
+- git clone in student folder now
+- pip install -r /path/to/requirements.txt
+- all dependencies will be installed
+- now cd into the student folder where you can see __manage.py__ file
+- first migrate to database using `py manage.py migrate`
+- now run the app `py manage.py runserver`
