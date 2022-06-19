@@ -133,7 +133,7 @@ def dictionary(request):
         text = request.POST['text']
         form = DashboardForm(request.POST)
 
-        url = "https://api.dictionaryapi.dev/api/v2/entries/en_US/"+text
+        url = "https://api.dictionaryapi.dev/api/v2/entries/en/"+text
         r = requests.get(url)
         answer = r.json()
         try:
