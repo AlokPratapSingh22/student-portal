@@ -11,7 +11,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Student Base</title>
+  <title>Study Portal</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -22,17 +22,17 @@
 </head>
 
 <body>
-  <header class="nav-header">
+  <header class="nav-header" id="top">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand font-trocchi fs20" href="{% url 'home'%}">Student Dashboard</a>
+        <a class="navbar-brand font-trocchi fs20" href="{% url 'home'%}">Study Portal</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse font-quicksand navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item {% if url_name == 'home' %}active{% endif %}">
+            <li id="home" class="nav-item {% if url_name == 'home' %}active{% endif %}">
               <a class="nav-link font-quicksand" aria-current="page" href="{% url 'home'%}">Home</a>
             </li>
             {% if user.is_authenticated %}
@@ -99,6 +99,24 @@
     {% endblock content %}
   </main>
 
+  <div class="footer-basic footer">
+    <footer>
+      <div class="social"><a href="https://www.instagram.com/the_worst_coder/"><i
+            class="icon fab fa-instagram"></i></a><a href="https://github.com/AlokPratapSingh22/student-portal"><i
+            class="icon fab fa-github-alt"></i></a></div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#home">Home</a></li>
+        <li class="list-inline-item"><a href="#top">Services</a></li>
+        <li class="list-inline-item"><a
+            href="https://github.com/AlokPratapSingh22/student-portal/blob/main/README.md">About</a></li>
+      </ul>
+      <p class="copyright">Alok Pratap Singh |
+        Sahil Choudhary |
+        Aravind Abhi | 2022
+      </p>
+    </footer>
+  </div>
+
   <script src="{% static 'js/main.js' %}" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
@@ -110,6 +128,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </body>
 
 </html>
