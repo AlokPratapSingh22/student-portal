@@ -21,6 +21,11 @@ main {
     font-family: Barlow, Quicksand, Rubik, sans-serif, serif, 'Times New Roman', Times, serif !important;
 }
 
+.nav-header{
+    border-bottom: 1px solid #7a3949;
+    box-shadow: 0 5px 10px rgba(14, 13, 13, 0.24);
+}
+
 footer {
     font-family: Rubik, sans-serif, serif, 'Times New Roman', Times, serif;
 }
