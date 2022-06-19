@@ -136,12 +136,18 @@ def dictionary(request):
         url = "https://api.dictionaryapi.dev/api/v2/entries/en/"+text
         r = requests.get(url)
         answer = r.json()
+
         try:
-            phonetics = answer[0]['phonetics'][0]['text']
-            audio = answer[0]['phonetics'][0]['audio']
-            definition = answer[0]['meanings'][0]['definitions'][0]['definition']
-            example = answer[0]['meanings'][0]['definitions'][0]['example']
-            synonyms = answer[0]['meanings'][0]['definitions'][0]['synonyms']
+            ph = answer[0]['phonetics'][0]
+
+            phonetics = ph['text'] if 'text' in ph else "N/A"
+            audio = ph['audio'] if 'audio' in ph else "N/A"
+
+            mean = answer[0]['meanings'][0]['definitions'][0]
+
+            definition = mean['definition'] if 'definition' in mean else 'N/A'
+            example = mean['example'] if 'example' in mean else 'N/A'
+            synonyms = mean['synonyms'] if 'synonyms' in mean else 'N/A'
             context = {
                 'form': form,
                 'input': text,
@@ -152,6 +158,7 @@ def dictionary(request):
                 'synonyms': synonyms,
             }
         except:
+            print('YESSSSS')
             context = {
                 'form': form,
                 'input': '',
