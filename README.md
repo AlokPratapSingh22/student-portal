@@ -13,9 +13,9 @@ https://portal-students.herokuapp.com/
 - #### Take Notes
   ![image](https://user-images.githubusercontent.com/60225218/174467737-48e7698b-5ebf-4ff3-a8f7-8c7dfd884ba0.png)
 - #### Create and Submit Homeworks
-  ![image](https://user-images.githubusercontent.com/60225218/174467746-e5fa46f0-2cb9-46c1-b1d0-aba837af56e5.png)
+  ![image](https://user-images.githubusercontent.com/60225218/174468661-5a2f2206-4916-48bb-97be-0ce27b9e39e6.png)
 - #### Create Todos
-  ![image](https://user-images.githubusercontent.com/60225218/174467754-ae31e13f-5789-45fb-a3fa-bb465f4be779.png)
+  ![image](https://user-images.githubusercontent.com/60225218/174468675-30e2a000-94ed-4730-8394-da2db52da169.png)
 - #### Search videos on Youtube
   ![image](https://user-images.githubusercontent.com/60225218/174467768-ac510f28-06f6-4365-af5b-7d213f52c402.png)
 - #### Search for books
